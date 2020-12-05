@@ -4,13 +4,13 @@ const INITIAL_STATE = {
   frutas: [
     {id: 1, nome: 'Abacaxi', quantidade: 5},
     {id: 2, nome: 'Melão', quantidade: 2},
-    {id: 3, nome: 'Laranla', quantidade: 4},
+    {id: 3, nome: 'Laranja', quantidade: 4},
   ]
 };
 
 const reducers = (state = INITIAL_STATE, action) => {
   switch(action.type) {
-    case actionsTypes.ADCIONAR_FRUTA:
+    case actionsTypes.ADICIONAR_FRUTA:
       return { frutas: [...state.frutas, {...action.payload}] };
     case actionsTypes.REMOVER_FRUTA:
       return { frutas: state.frutas.filter(fruta => fruta.id !== action.payload.id) };

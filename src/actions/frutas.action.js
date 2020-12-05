@@ -2,7 +2,7 @@ import {actionsTypes} from '../constants/fruta';
 
 const actions = {
   adicionar: fruta => ({
-    type: actionsTypes.ADCIONAR_FRUTA,
+    type: actionsTypes.ADICIONAR_FRUTA,
     payload: fruta
   }),
 
